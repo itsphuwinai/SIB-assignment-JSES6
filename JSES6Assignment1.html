@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSES6Assignment1</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #fdfaf5;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .notebook {
+            background-color: #fdfaf5;
+            width: 600px;
+            margin: 0 auto;
+            padding: 30px 40px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            line-height: 2.5;
+            
+            
+            background-image: linear-gradient(to bottom, transparent 20px, #a0c4ff 40px);
+            background-size: 100% 30px;
+        }
+
+        
+        .notebook::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 40px;
+            width: 2px;
+            height: 100%;
+            background-color: #ff595e;
+        }
+
+        h2 {
+            color: #274c77;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            text-align: left;
+            margin-left: 50px;
+        }
+
+        .answer {
+            font-size: 16px;
+            color: #0077b6;
+            text-align: left;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="notebook">
+        <h3 style="font-style: italic; text-align: left; margin-left: 20px;">Ilsa Margiana</h3>
+        <h2>Area Calculation!</h2>
+
+        <script>
+            // Question 1: Rectangle
+            // Display the question for the rectangle area calculation
+            document.write('<p class="question">1. Given a rectangle with a length of 27 cm and a width of 38 cm, calculate its area using the formula (Area = length × width).</p>');
+            
+            // Declare variables for length and width
+            let length = 27;
+            let width = 38;
+        
+            // Calculate the area using the formula: length × width
+            let areaRectangle = length * width;
+        
+            // Display the result
+            document.write('<p class="answer">The area of the rectangle is <span style="text-decoration: underline; text-decoration-color: red; text-decoration-thickness: 3px;">' + areaRectangle + '</span> cm².</p><br>');
+        
+
+            // Question 2: Square
+            // Display the question for the square area calculation
+            document.write('<p class="question">2. A square has sides measuring 2 cm. Determine its area using the formula (Area = side × side).</p>');
+        
+            // Declare variable for the side length
+            let side = 2;
+        
+            // Calculate the area using the formula: side × side
+            let areaSquare = side * side;
+        
+            // Display the result
+            document.write('<p class="answer">The area of the square is <span style="text-decoration: underline; text-decoration-color: red; text-decoration-thickness: 3px;">' + areaSquare + '</span> cm².</p><br>');
+        
+
+            // Question 3: Triangle
+            // Display the question for the triangle area calculation
+            document.write('<p class="question">3. A triangle has a base of 6 cm and a height of 191 cm. Find its area using the formula (Area = 1/2 × base × height).</p>');
+        
+            // Declare variables for base and height
+            let base = 6;
+            let height = 191;
+        
+            // Calculate the area using the formula: (1/2) × base × height
+            let areaTriangle = 0.5 * base * height;
+        
+            // Display the result
+            document.write('<p class="answer">The area of the triangle is <span style="text-decoration: underline; text-decoration-color: red; text-decoration-thickness: 3px;">' + areaTriangle + '</span> cm².</p><br>');
+        </script>        
+        
+    </div>
+
+</body>
+</html>
